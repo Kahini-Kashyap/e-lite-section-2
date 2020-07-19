@@ -1,0 +1,48 @@
+body{
+     margin:0px;
+       font-family: 'Roboto', sans-serif;
+}
+
+
+#input{
+       height:12vh;
+       width:220px;
+       font-family: 'Roboto', sans-serif;
+       font-size: 18px;
+       border:none;
+       border-radius: 10px
+       
+}
+
+#probs span{
+            font-size:30px;
+            margin:0px 10px;
+  
+}
+#probs {
+        background-color:lightgrey;
+        height:30vh;
+        margin-top:20vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:100%;
+}
+
+.sl{
+          font-family: 'Roboto', sans-serif;
+          font-size: 28px;
+          padding-left: 18px;
+}
+
+.sc{
+          font-family: 'Roboto', sans-serif;
+          font-size: 28px;
+         padding-right: 20px
+}
+
+.top{
+      display:flex;
+    justify-content: space-between
+}
+

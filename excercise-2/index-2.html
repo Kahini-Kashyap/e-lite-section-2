@@ -1,0 +1,32 @@
+<html>
+<head><title>excercise 3</title></head>
+<link rel="stylesheet" type="text/css" href="index-2.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<body>
+<div>
+    <h1>Number Facts</h1>
+    <h3>Enter a number</h3>
+<input type="number" placeholder="Ex. 7" id="number">
+
+<input type="submit" class=submit onclick="getFact()">
+    <p id="fact"></p>
+    </div>
+    <script>
+    var num = document.getElementById('number');
+var fact = document.getElementById('fact');
+
+function getFact(){
+    var n = num.value;
+    if(number != ''){
+        fetch('http://numbersapi.com/'+n)
+        .then(response => response.text())
+        .then(data =>{
+            fact.innerHTML=data;
+        })
+        .catch(err => console.log(err));
+        
+    }
+   
+}</script>
+</body>
+</html>
