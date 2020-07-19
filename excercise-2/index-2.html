@@ -18,7 +18,7 @@ var fact = document.getElementById('fact');
 function getFact(){
     var n = num.value;
     if(number != ''){
-        fetch('http://numbersapi.com/'+n)
+        fetch('https://numbersapi.com/'+n)
         .then(response => response.text())
         .then(data =>{
             fact.innerHTML=data;
